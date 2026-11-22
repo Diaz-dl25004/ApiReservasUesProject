@@ -1,12 +1,10 @@
-package com.reservation.repository;
+package com.reservation.domain.repository;
 
 import com.reservation.domain.model.Customer;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
-@Repository
 public interface CustomerRepository {
 
     Customer save(Customer customer);
