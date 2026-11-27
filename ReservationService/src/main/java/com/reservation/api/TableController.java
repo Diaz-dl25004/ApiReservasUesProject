@@ -1,5 +1,6 @@
 package com.reservation.api;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import com.reservation.api.dto.TableResponse;
 import com.reservation.domain.repository.TableRepository;
 import com.reservation.exception.TableNotFoundException;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+@Tag(name = "Mesas", description = "Consulta de mesas del restaurante")
 @RestController
 @RequestMapping("/api/tables")
 public class TableController {
