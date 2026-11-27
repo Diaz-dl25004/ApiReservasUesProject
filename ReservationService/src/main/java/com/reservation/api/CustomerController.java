@@ -1,5 +1,6 @@
 package com.reservation.api;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import com.reservation.api.dto.CustomerRequest;
 import com.reservation.api.dto.CustomerResponse;
 import com.reservation.application.CustomerService;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+@Tag(name = "Clientes", description = "Alta, consulta, modificación y baja de clientes")
 @RestController
 @RequestMapping("/api/customers")
 public class CustomerController {
